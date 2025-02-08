@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #511364;
+    font-family: 'Lato', 'sans-serif';
+    box-sizing: border-box;
+}
+#navbar {
+    margin: 0 auto;
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#nav-items{
+    display: flex;
+    width: 500px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+#nav-items li{
+    cursor: pointer;
+}
+#main-header{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+#main-header.right{
+    width: 90;
+    height: 100;
+    z-index: -10;
+    mix-blend-mode: color-dodge;
+}
+#main-header.left{
+    position: absolute;
+    width: 40;
+    top: 100px;
+    left: 10%;
+    height: 100;
+}
+.gradient-text{
+    color: #ff00f2;
+}
+.button{
+    display: flex;
+} /*
+.btn {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: 1px solid #7d63f1;
+    cursor: pointer;
+    background: linear-gradient(45deg, #7d63f1 6%,#2c2c94 28%, #ff00f2 97%);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn1{
+    background: #511364;
+    background: linear-gradient(45deg, #7d63f1 6%,#2c2c94 28%, #ff00f2 97%);
+} */
+#experience{
+    color: #fff;
+}
+#projects{
+    color: #fff;
+}
+#certifications{
+    color:#fff;
+}
+#interests{
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: 1px solid #7d63f1;
+    cursor: pointer;
+    background: linear-gradient(45deg, #7d63f1 6%, #2c2c94 28%, #ff00f2 97%);
+    color: #fff;
+    border-radius: 5px;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+.form-container input[type="text"], .form-container input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container .btn {
+    background-color: #511364;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-container .btn:hover, .btn:focus {
+    background-color: #45a049;
+}
+
+.form-container .cancel {
+    background-color: #ff5c5c;
+}
